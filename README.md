@@ -16,6 +16,10 @@
   <img src="https://img.shields.io/badge/aws--ses-v3-orange" />
 </p>
 
+<p align="center">
+  <a href="https://alado.viaiv.com.br"><strong>alado.viaiv.com.br</strong></a>
+</p>
+
 ---
 
 ## A historia
@@ -131,6 +135,20 @@ O app permite configurar a velocidade de envio para respeitar os limites da sua 
 - **Nenhum dado** e salvo em localStorage, sessionStorage ou cookies
 - Preview de HTML renderizado em `<iframe sandbox="">` para prevenir XSS
 - Ao fechar a aba ou o navegador, tudo e destruido
+
+---
+
+## Docker
+
+```bash
+# Build da imagem
+docker build -t alado .
+
+# Rodar o container
+docker run -p 80:80 alado
+```
+
+A imagem usa multi-stage build (Node 22 para build, Nginx Alpine para servir) e fica com ~25MB. Pronta para deploy em Easypanel, Coolify, ou qualquer plataforma que rode containers.
 
 ---
 
