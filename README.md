@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/favicon.svg" width="60" />
+  <img src="public/favicon.svg?v=2" width="60" />
 </p>
 
 <h1 align="center">alado</h1>
